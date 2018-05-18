@@ -14,7 +14,7 @@ int main()
     gets(t);    // 输入短字符
 
 
-	free(s);
+    free(s);
     free(t);
     return 0;
 }
