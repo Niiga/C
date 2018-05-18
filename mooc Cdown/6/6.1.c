@@ -13,6 +13,10 @@ No[回车]
 #include <stdio.h>
 #include <malloc.h>
 
+void judg(char *str, char *c) {
+
+}
+
 int main()
 {
     char *s, *t;
@@ -20,6 +24,7 @@ int main()
     t = (char *)malloc(1024); 
     gets(s);    // 获得一个包含空格的字符串输入，长字符
     gets(t);    // 获得短字符
+    judg(s, t);
 
     free(s);
     free(t);
