@@ -13,8 +13,44 @@ No[回车]
 #include <stdio.h>
 #include <malloc.h>
 
-void judg(char *str, char *c) {
+int size(char* s){
+    int i=0;
+    for (i=0; s[i]!='\0'; i++);
+    return i;
+}
 
+void judg(char *str, char *c) {
+    int i=0, n=0, num=0, sum=0;
+    i = size(str);
+    n = size(c);
+    int n1, i1;
+    i1 = i;
+    n1 = n;
+
+    for (i=0; i<i1; i++){           // 字符串
+        int i2;
+        i2 = i;
+        for (n=0; n<n1; n++){       // 搜索的字符
+            if (c[n] == str[i2]) {
+                num++;
+                if (num == n1){
+                    sum++;
+                    num = 0;        // 归零
+                    i = i2;
+                    break;
+                }
+                i2++;                
+            } else {
+                num = 0;            // 归零
+                break;
+            }
+        }
+    }
+    if (sum == 0){
+        printf("No\n");
+    } else {
+        printf("%d\n", sum);
+    }
 }
 
 int main()
