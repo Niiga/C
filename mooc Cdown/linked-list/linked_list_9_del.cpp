@@ -1,8 +1,8 @@
 /*
-1 需要先找到对应的节点
-2 需要记录当前节点的前一个节点
-3 这个例子中仅考虑被删除的节点在链表中间，还有被删除的节点是第一个节点、最后一个节点；
-  没有这个节点的特殊情况，需要考虑。
+1 ��Ҫ���ҵ���Ӧ�Ľڵ�
+2 ��Ҫ��¼��ǰ�ڵ��ǰһ���ڵ�
+3 ��������н����Ǳ�ɾ���Ľڵ��������м䣬���б�ɾ���Ľڵ��ǵ�һ���ڵ㡢���һ���ڵ㣻
+  û������ڵ�������������Ҫ���ǡ�
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,16 +10,16 @@
 struct node
 {
     int data;
-    node *next;
+    struct node *next;
 };
 
-void main()
+int main()
 {
-    node *head, *p1, *p2, *p;
+    struct node *head, *p1, *p2, *p;
     int i;
     head = 0;
 
-    // 初始化链表
+    // ��ʼ������
     for (i=1; i<=5; i++)
     {
         p1 = (node *)malloc(sizeof(node));
@@ -37,24 +37,24 @@ void main()
     }
     p2->next = 0;
 
-    // 删除数据为2的链表节点
+    // ɾ������Ϊ2�������ڵ�
     p1 = head;
-    while (p1->data != 2)
+    while (p1->data != 2)	// �ҳ�2�Ľ�㣬p1ָ��2 
     {
         p2 = p1;
         p1 = p1->next;
     }
     p2->next = p1->next;
-    delete p1;      // 删除
+    delete p1;      // ɾ��p1 
 
-    // 输出链表数据
+    // �����������
     p = head;
-    printf("链表上个结点的数据为：\n");
+    printf("�����ϸ���������Ϊ��\n");
     while (p != 0)
     {
         printf("%d ", p->data);
         p = p->next;
     }
     printf("\n");
-    
+    return 0;
 }
