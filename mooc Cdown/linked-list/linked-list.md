@@ -1,23 +1,21 @@
-> Ñ§Ï°Á´±í
+> å­¦ä¹ é“¾è¡¨
 
-×÷Õß£ºÍ¯¾§  
-Á´½Ó£ºhttps://www.zhihu.com/question/53645056/answer/139083035  
-À´Ô´£ºÖªºõ  
-*¸ù¾Ý×Ô¼ºµÄÀí½âÉÔÎ¢ÓÐ¸Ä¶¯£º´úÂëC»¯£¬ÀÏÊ¦ÓÃµÄÓ¦¸ÃÊÇCPP¸ñÊ½£¬ÆäÖÐdeleteÔÝÊ±»¹Ã»ÓÐÕÒµ½ÈçºÎC»¯£¬ËùÒÔ9ºÍ10µÄ´úÂë»¹ÊÇÒªÓÃ.cppÎÄ¼þÃû²ÅÄÜ±àÒë³É¹¦¡£*  
+ä½œè€…ï¼šç«¥æ™¶  
+é“¾æŽ¥ï¼šhttps://www.zhihu.com/question/53645056/answer/139083035  
+æ¥æºï¼šçŸ¥ä¹Ž  
+*æ ¹æ®è‡ªå·±çš„ç†è§£ç¨å¾®æœ‰æ”¹åŠ¨ï¼šä»£ç CåŒ–ï¼Œè€å¸ˆç”¨çš„åº”è¯¥æ˜¯CPPæ ¼å¼ï¼Œå…¶ä¸­deleteæš‚æ—¶è¿˜æ²¡æœ‰æ‰¾åˆ°å¦‚ä½•CåŒ–ï¼Œæ‰€ä»¥9å’Œ10çš„ä»£ç è¿˜æ˜¯è¦ç”¨.cppæ–‡ä»¶åæ‰èƒ½ç¼–è¯‘æˆåŠŸã€‚*  
 
-É¾³ýÊý×éÖÐµÄÒ»¸öÔªËØ¡¢ÔÚÊý×éÖÐ²åÈëÒ»¸öÔªËØ¡¢ÔÚÊý×éÄ©Î²Ìí¼ÓÒ»¸öÔªËØ¡£  
--µ±ÐèÒªÌí¼ÓÒ»¸öÔªËØÊ±£¬»á×Ô¶¯Ìí¼Ó£»  
--µ±ÐèÒª¼õÉÙÒ»¸öÔªËØÊ±£¬»á×Ô¶¯·ÅÆú¸ÃÔªËØÔ­À´Õ¼ÓÐµÄÄÚ´æ£»  
--¿ÉÒÔ½Ï·½±ãµØ²åÈëÐÂµÄÔªËØ¡£  
+æ•°ç»„ï¼šåˆ é™¤æ•°ç»„ä¸­çš„ä¸€ä¸ªå…ƒç´ ã€åœ¨æ•°ç»„ä¸­æ’å…¥ä¸€ä¸ªå…ƒç´ ã€åœ¨æ•°ç»„æœ«å°¾æ·»åŠ ä¸€ä¸ªå…ƒç´ ã€‚  
+é“¾è¡¨ï¼šå½“éœ€è¦æ·»åŠ ä¸€ä¸ªå…ƒç´ æ—¶ï¼Œä¼šè‡ªåŠ¨æ·»åŠ ï¼›å½“éœ€è¦å‡å°‘ä¸€ä¸ªå…ƒç´ æ—¶ï¼Œä¼šè‡ªåŠ¨æ”¾å¼ƒè¯¥å…ƒç´ åŽŸæ¥å æœ‰çš„å†…å­˜ï¼›å¯ä»¥è¾ƒæ–¹ä¾¿åœ°æ’å…¥æ–°çš„å…ƒç´ ã€‚  
 
-1. ¶¨ÒåÁ´±íµ¥¸ö½ÚµãµÄÊý¾Ý½á¹¹¡£
+1. å®šä¹‰é“¾è¡¨å•ä¸ªèŠ‚ç‚¹çš„æ•°æ®ç»“æž„ã€‚
 ```
 #include <stdio.h>
 
 struct node
 {
     int data;
-    struct node *next; // Ö¸ÏòÏÂÒ»¸ö
+    struct node *next; // æŒ‡å‘ä¸‹ä¸€ä¸ª
 };
 
 void main()
@@ -27,8 +25,8 @@ void main()
 }
 ```
   
-2. ³¢ÊÔÓÃÖ¸ÕëµÄ·½Ê½À´ÊµÏÖ
-3. ·ÖÅä´æ´¢¿Õ¼ä(¸Ä½ø´úÂë)
+2. å°è¯•ç”¨æŒ‡é’ˆçš„æ–¹å¼æ¥å®žçŽ°
+3. åˆ†é…å­˜å‚¨ç©ºé—´(æ”¹è¿›ä»£ç )
 ```
 #include <stdio.h>
 #include <stdlib.h> // malloc
@@ -42,13 +40,13 @@ struct node
 void main()
 {
     struct node *p;
-    p = (struct node *)malloc(sizeof(struct node));   // Ê¹ÓÃÖ¸ÕëÇ°ÐèÒª·ÖÅä´æ´¢¿Õ¼ä
+    p = (struct node *)malloc(sizeof(struct node));   // ä½¿ç”¨æŒ‡é’ˆå‰éœ€è¦åˆ†é…å­˜å‚¨ç©ºé—´
     (*p).data = 1;
 }
 ```
   
-4. ÊµÏÖÁ½¸ö½ÚµãµÄ´®Áª£¬²¢¿ÉÒÔµ¥²½¸ú×Ù
-5. Ôö¼ÓÁ´±í×îºóÒ»¸ö½ÚµãµÄ½áÊø±êÖ¾
+4. å®žçŽ°ä¸¤ä¸ªèŠ‚ç‚¹çš„ä¸²è”ï¼Œå¹¶å¯ä»¥å•æ­¥è·Ÿè¸ª
+5. å¢žåŠ é“¾è¡¨æœ€åŽä¸€ä¸ªèŠ‚ç‚¹çš„ç»“æŸæ ‡å¿—
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -69,11 +67,11 @@ void main()
     (*p2).data = 2;
 
     p1->next = p2;
-    p2->next = NULL;    // ½áÊø±êÖ¾
+    p2->next = NULL;    // ç»“æŸæ ‡å¿—
 }
 ```
   
-6. Ôö¼ÓÒ»¸ö±äÁ¿£¬¼ÇÂ¼Í·Ö¸Õë
+6. å¢žåŠ ä¸€ä¸ªå˜é‡ï¼Œè®°å½•å¤´æŒ‡é’ˆ
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -101,7 +99,7 @@ void main()
 }
 ```
   
-7. ³¢ÊÔÀûÓÃÑ­»·Óï¾ä£¬ÊµÏÖ¶à¸ö½ÚµãµÄ³õÊ¼»¯¡£
+7. å°è¯•åˆ©ç”¨å¾ªçŽ¯è¯­å¥ï¼Œå®žçŽ°å¤šä¸ªèŠ‚ç‚¹çš„åˆå§‹åŒ–ã€‚
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -120,7 +118,7 @@ void main()
 
     for (i=1; i<=5; i++) {
         p1 = (struct node *)malloc(sizeof(struct node));
-        (*p1).data = i£»
+        (*p1).data = iï¼›
         if (head == 0) {
             head = p1;
             p2 = p1;
@@ -133,7 +131,7 @@ void main()
 }
 ```
   
-8. ½«ÉÏÃæ³õÊ¼»¯µÄÁ´±íÒÀ´ÎÊä³ö
+8. å°†ä¸Šé¢åˆå§‹åŒ–çš„é“¾è¡¨ä¾æ¬¡è¾“å‡º
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -150,7 +148,7 @@ void main()
     int i;
     head = 0;
 
-    // ³õÊ¼»¯Á´±í
+    // åˆå§‹åŒ–é“¾è¡¨
     for (i=1; i<=5; i++) 
     {
         p1 = (struct node *)malloc(sizeof(struct node));
@@ -168,10 +166,10 @@ void main()
     }
     p2->next = 0;
 
-    // Êä³öÁ´±íÊý¾Ý
+    // è¾“å‡ºé“¾è¡¨æ•°æ®
     node *p;
     p = head;
-    printf("Á´±íÉÏ¸÷½áµãµÄÊý¾ÝÎª£º\n");
+    printf("é“¾è¡¨ä¸Šå„ç»“ç‚¹çš„æ•°æ®ä¸ºï¼š\n");
     while(p != 0)
     {
         printf("%d ", p->data);
@@ -181,13 +179,13 @@ void main()
 }
 ```
   
-9. ³¢ÊÔÉ¾³ýÁ´±íÖÐµÄÒ»¸ö½Úµã¡£
+9. å°è¯•åˆ é™¤é“¾è¡¨ä¸­çš„ä¸€ä¸ªèŠ‚ç‚¹ã€‚
 ```
-// ÐèÒªÏÈÕÒµ½¶ÔÓ¦µÄ½Úµã
-// ÐèÒª¼ÇÂ¼µ±Ç°½ÚµãµÄÇ°Ò»¸ö½Úµã
+// éœ€è¦å…ˆæ‰¾åˆ°å¯¹åº”çš„èŠ‚ç‚¹
+// éœ€è¦è®°å½•å½“å‰èŠ‚ç‚¹çš„å‰ä¸€ä¸ªèŠ‚ç‚¹
 /*
-Õâ¸öÀý×ÓÖÐ½ö¿¼ÂÇ±»É¾³ýµÄ½ÚµãÔÚÁ´±íÖÐ¼ä£¬»¹ÓÐ±»É¾³ýµÄ½ÚµãÊÇµÚÒ»¸ö½Úµã¡¢×îºóÒ»¸ö½Úµã£»
-Ã»ÓÐÕâ¸ö½ÚµãµÄÌØÊâÇé¿ö£¬ÐèÒª¿¼ÂÇ¡£
+è¿™ä¸ªä¾‹å­ä¸­ä»…è€ƒè™‘è¢«åˆ é™¤çš„èŠ‚ç‚¹åœ¨é“¾è¡¨ä¸­é—´ï¼Œè¿˜æœ‰è¢«åˆ é™¤çš„èŠ‚ç‚¹æ˜¯ç¬¬ä¸€ä¸ªèŠ‚ç‚¹ã€æœ€åŽä¸€ä¸ªèŠ‚ç‚¹ï¼›
+æ²¡æœ‰è¿™ä¸ªèŠ‚ç‚¹çš„ç‰¹æ®Šæƒ…å†µï¼Œéœ€è¦è€ƒè™‘ã€‚
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -204,7 +202,7 @@ void main()
     int i;
     head = 0;
 
-    // ³õÊ¼»¯Á´±í
+    // åˆå§‹åŒ–é“¾è¡¨
     for (i=1; i<=5; i++)
     {
         p1 = (node *)malloc(sizeof(node));
@@ -222,19 +220,19 @@ void main()
     }
     p2->next = 0;
 
-    // É¾³ýÊý¾ÝÎª2µÄÁ´±í½Úµã
+    // åˆ é™¤æ•°æ®ä¸º2çš„é“¾è¡¨èŠ‚ç‚¹
     p1 = head;
-    while (p1->data != 2)   // ÕÒ³ö2£¬p1Ö¸Ïò2
+    while (p1->data != 2)   // æ‰¾å‡º2ï¼Œp1æŒ‡å‘2
     {
         p2 = p1;
         p1 = p1->next;
     }
     p2->next = p1->next;    
-    delete p1;      // É¾³ýp1
+    delete p1;      // åˆ é™¤p1
 
-    // Êä³öÁ´±íÊý¾Ý
+    // è¾“å‡ºé“¾è¡¨æ•°æ®
     p = head;
-    printf("Á´±íÉÏ¸ö½áµãµÄÊý¾ÝÎª£º\n");
+    printf("é“¾è¡¨ä¸Šä¸ªç»“ç‚¹çš„æ•°æ®ä¸ºï¼š\n");
     while (p != 0)
     {
         printf("%d ", p->data);
@@ -244,36 +242,36 @@ void main()
 }
 ```
   
-10. ²åÈë½Úµã¡¢ÐÂÔö½Úµã¡¢Á´±íÅÅÐòµÈ
+10. æ’å…¥èŠ‚ç‚¹ã€æ–°å¢žèŠ‚ç‚¹ã€é“¾è¡¨æŽ’åºç­‰
 ```
 //
-// ÊµÏÖÁ´±íµÄ»ù±¾²Ù×÷
+// å®žçŽ°é“¾è¡¨çš„åŸºæœ¬æ“ä½œ
 //
 #include <stdio.h>
 #include <malloc.h>
 
-struct node // Á´±íÉÏ½áµãµÄÊý¾Ý½á¹¹
+struct node // é“¾è¡¨ä¸Šç»“ç‚¹çš„æ•°æ®ç»“æž„
 {
 	int data;
 	node *next;
 };
 
-node *Create(void)  // ²úÉúÒ»ÌõÎÞÐòÁ´±í
+node *Create(void)  // äº§ç”Ÿä¸€æ¡æ— åºé“¾è¡¨
 {
-	node *p1,*p2,*head;  // p2Ö¸Ïò×îºóÒ»¸ö½áµã, p1Ö¸Ïò²åÈë½áµã£¬headÖ¸ÏòÍ·½áµã
+	node *p1,*p2,*head;  // p2æŒ‡å‘æœ€åŽä¸€ä¸ªç»“ç‚¹, p1æŒ‡å‘æ’å…¥ç»“ç‚¹ï¼ŒheadæŒ‡å‘å¤´ç»“ç‚¹
 	int a;
 	head = 0;
-	printf("²úÉúÒ»ÌõÎÞÐòÁ´±í£¬ÇëÊäÈëÊý¾Ý£¬ÒÔ-1½áÊø£º\n");
+	printf("äº§ç”Ÿä¸€æ¡æ— åºé“¾è¡¨ï¼Œè¯·è¾“å…¥æ•°æ®ï¼Œä»¥-1ç»“æŸï¼š\n");
 	scanf("%d",&a);
-	while(a!=-1)   // 1£¬3£¬2£¬4£¬-1
+	while(a!=-1)   // 1ï¼Œ3ï¼Œ2ï¼Œ4ï¼Œ-1
 	{
 		p1 = (node *)malloc(sizeof(node));
 		p1->data=a;
-		if(head == 0)  // ²åÈëÁ´±íµÄÊ×²¿
+		if(head == 0)  // æ’å…¥é“¾è¡¨çš„é¦–éƒ¨
 		{
 			head = p1; p2 = p1;
 		}
-		else  // ²åÈëÁ´±íÎ²
+		else  // æ’å…¥é“¾è¡¨å°¾
 		{ 
 			p2->next = p1; p2 = p1;
 		}
@@ -284,11 +282,11 @@ node *Create(void)  // ²úÉúÒ»ÌõÎÞÐòÁ´±í
 	return (head);
 }
 
-void Print(node *head)  // Êä³öÁ´±íÉÏ¸÷½áµãµÄÊý¾Ý
+void Print(node *head)  // è¾“å‡ºé“¾è¡¨ä¸Šå„ç»“ç‚¹çš„æ•°æ®
 {
 	node *p;
 	p = head;
-	printf("Á´±íÉÏ¸÷½áµãµÄÊý¾ÝÎª£º\n");
+	printf("é“¾è¡¨ä¸Šå„ç»“ç‚¹çš„æ•°æ®ä¸ºï¼š\n");
 	while(p!=0)
 	{
 		printf("%d  ",p->data);
@@ -297,69 +295,69 @@ void Print(node *head)  // Êä³öÁ´±íÉÏ¸÷½áµãµÄÊý¾Ý
 	printf("\n");
 }
 
-node *Delete_one_node(node *head,int num)  // ¸ù¾ÝÊý¾ÝÖµÉ¾³ýÁ´±íÖÐµÄÒ»¸ö½áµã
+node *Delete_one_node(node *head,int num)  // æ ¹æ®æ•°æ®å€¼åˆ é™¤é“¾è¡¨ä¸­çš„ä¸€ä¸ªç»“ç‚¹
 {
 	node *p1,*p2;
 	if(head == 0)
 	{	
-		printf("Á´±íÎª¿Õ£¬ÎÞ½áµã¿ÉÉ¾³ý!\n");
+		printf("é“¾è¡¨ä¸ºç©ºï¼Œæ— ç»“ç‚¹å¯åˆ é™¤!\n");
 		return 0;
 	}
-	if(head->data == num)  //É¾³ýÊ×½áµã
+	if(head->data == num)  //åˆ é™¤é¦–ç»“ç‚¹
 	{	   
 		p1 = head;    
 		head = head->next;    
 		free( (void *)p1 );
-		printf("É¾³ýÁËÒ»¸ö½áµã!\n");
+		printf("åˆ é™¤äº†ä¸€ä¸ªç»“ç‚¹!\n");
 	}
 	else
 	{       	    
 		p1 = head;    
-		p2 = head->next;  // p1Ö¸Ïò±È½Ï½ÚµãµÄÇ°Ò»¸ö½áµã
-		while(p2->data != num && p2->next != 0)  // ÕÒµ½ÒªÉ¾³ýµÄ½áµã
+		p2 = head->next;  // p1æŒ‡å‘æ¯”è¾ƒèŠ‚ç‚¹çš„å‰ä¸€ä¸ªç»“ç‚¹
+		while(p2->data != num && p2->next != 0)  // æ‰¾åˆ°è¦åˆ é™¤çš„ç»“ç‚¹
 		{ 	
 			p1 = p2;    
 			p2 = p2->next;
 		}
-		if(p2->data == num)  // É¾³ýÕÒµ½µÄ½áµã
+		if(p2->data == num)  // åˆ é™¤æ‰¾åˆ°çš„ç»“ç‚¹
 		{	
 			p1->next = p2->next;	
 			free( (void *)p2 );
-			printf("É¾³ýÁËÒ»¸ö½áµã!\n");
+			printf("åˆ é™¤äº†ä¸€ä¸ªç»“ç‚¹!\n");
 		}
 		else
-			printf("Á´±íÉÏÃ»ÓÐÕÒµ½ÒªÉ¾³ýµÄ½áµã!\n");
+			printf("é“¾è¡¨ä¸Šæ²¡æœ‰æ‰¾åˆ°è¦åˆ é™¤çš„ç»“ç‚¹!\n");
 	}
 	return head;
 }
 
-node *Insert(node *head,node *p)  // ½«Ò»¸ö½áµã²åÈëÁ´±íÖÐ
+node *Insert(node *head,node *p)  // å°†ä¸€ä¸ªç»“ç‚¹æ’å…¥é“¾è¡¨ä¸­
 {
 	node *p1,*p2;
-	if(head == 0 )  // ¿ÕÁ´±í£¬²åÈëÁ´±íÊ×½áµã
+	if(head == 0 )  // ç©ºé“¾è¡¨ï¼Œæ’å…¥é“¾è¡¨é¦–ç»“ç‚¹
 	{      
 		head = p;  
 		p->next = 0;
 		return head;
 	}
-	if(head->data >= p->data)  // ·Ç¿ÕÁ´±í£¬²åÈëµ½Á´±íµÄÊ×½áµã
+	if(head->data >= p->data)  // éžç©ºé“¾è¡¨ï¼Œæ’å…¥åˆ°é“¾è¡¨çš„é¦–ç»“ç‚¹
 	{
 		p->next = head;   
 		head = p;
 		return head;
 	}
 	p2 = p1 = head;
-	while(p2->next && p2->data <p->data)  // ÕÒµ½Òª²åÈëµÄÎ»ÖÃ
+	while(p2->next && p2->data <p->data)  // æ‰¾åˆ°è¦æ’å…¥çš„ä½ç½®
 	{
 		p1 = p2;  
 		p2 = p2->next;
 	}
-	if(p2->data < p->data)  // ²åÈëÁ´±íÎ²
+	if(p2->data < p->data)  // æ’å…¥é“¾è¡¨å°¾
 	{
 		p2->next = p; 
 		p->next = 0;
 	}
-	else  // ²åÈëÔÚp1ºÍp2ËùÖ¸ÏòµÄ½áµãÖ®¼ä
+	else  // æ’å…¥åœ¨p1å’Œp2æ‰€æŒ‡å‘çš„ç»“ç‚¹ä¹‹é—´
 	{
 		p->next = p2; 
 		p1->next = p;
@@ -367,24 +365,24 @@ node *Insert(node *head,node *p)  // ½«Ò»¸ö½áµã²åÈëÁ´±íÖÐ
 	return head;
 }
 
-node *Create_sort(void)  // ²úÉúÒ»ÌõÓÐÐòÁ´±í
+node *Create_sort(void)  // äº§ç”Ÿä¸€æ¡æœ‰åºé“¾è¡¨
 {
 	node *p1,*head = NULL;
 	int a;
-	printf("²úÉúÒ»ÌõÓÐÐòÁ´±í£¬ÇëÊäÈëÊý¾Ý£¬ÒÔ-1½áÊø£º\n");
+	printf("äº§ç”Ÿä¸€æ¡æœ‰åºé“¾è¡¨ï¼Œè¯·è¾“å…¥æ•°æ®ï¼Œä»¥-1ç»“æŸï¼š\n");
 	scanf("%d",&a);
 	while(a!=-1)
 	{
-		p1 = (node *)malloc(sizeof(node));  // ²úÉúÒ»¸öÐÂ½áµã
+		p1 = (node *)malloc(sizeof(node));  // äº§ç”Ÿä¸€ä¸ªæ–°ç»“ç‚¹
 		p1->data=a;
-		head = Insert(head,p1);  // ½«ÐÂ½áµã²åÈëÁ´±íÖÐ
+		head = Insert(head,p1);  // å°†æ–°ç»“ç‚¹æ’å…¥é“¾è¡¨ä¸­
 		scanf("%d",&a);
 	}
 	return head;
 }
 
 
-void deletechain(node *head)  // ÊÍ·ÅÁ´±íÉÏ¸÷½áµãÕ¼ÓÃµÄÄÚ´æ¿Õ¼ä
+void deletechain(node *head)  // é‡Šæ”¾é“¾è¡¨ä¸Šå„ç»“ç‚¹å ç”¨çš„å†…å­˜ç©ºé—´
 {
 	node *p1;
 	while(head)
@@ -400,24 +398,24 @@ void main()
 {
 	node * head;
 	int num;
-	head = Create();                       // ²úÉúÒ»ÌõÎÞÐòÁ´±í   1£¬3£¬2£¬5£¬-1
+	head = Create();                       // äº§ç”Ÿä¸€æ¡æ— åºé“¾è¡¨   1ï¼Œ3ï¼Œ2ï¼Œ5ï¼Œ-1
 
-	Print(head);                           // Êä³öÁ´±íÉÏµÄ¸÷½áµãÖµ
+	Print(head);                           // è¾“å‡ºé“¾è¡¨ä¸Šçš„å„ç»“ç‚¹å€¼
 
-	printf("ÊäÈëÒªÉ¾³ý½áµãÉÏµÄÕûÊý£º\n");
+	printf("è¾“å…¥è¦åˆ é™¤ç»“ç‚¹ä¸Šçš„æ•´æ•°ï¼š\n");
 	scanf("%d",&num);          
-	head = Delete_one_node(head,num);      // É¾³ýÁ´±íÉÏ¾ßÓÐÖ¸¶¨ÖµµÄ½áµã   2£¬1
+	head = Delete_one_node(head,num);      // åˆ é™¤é“¾è¡¨ä¸Šå…·æœ‰æŒ‡å®šå€¼çš„ç»“ç‚¹   2ï¼Œ1
 	Print(head);    
 	
 	node *p1 = (node *)malloc(sizeof(node));
 	p1->data=4;
-	head = Insert(head,p1);                // ½«ÐÂ½áµã²åÈëÁ´±íÖÐ
+	head = Insert(head,p1);                // å°†æ–°ç»“ç‚¹æ’å…¥é“¾è¡¨ä¸­
 	Print(head);
 
-	deletechain(head);                     // ÊÍ·ÅÕû¸öÁ´±íµÄ½áµã¿Õ¼ä
+	deletechain(head);                     // é‡Šæ”¾æ•´ä¸ªé“¾è¡¨çš„ç»“ç‚¹ç©ºé—´
 
-	head = Create_sort();                  // ²úÉúÒ»ÌõÓÐÐòÁ´±í   1£¬3£¬2£¬5£¬-1
+	head = Create_sort();                  // äº§ç”Ÿä¸€æ¡æœ‰åºé“¾è¡¨   1ï¼Œ3ï¼Œ2ï¼Œ5ï¼Œ-1
 	Print(head);
-	deletechain(head);                     // ÊÍ·ÅÁ´±íÉÏ¸÷½áµãÕ¼ÓÃµÄÄÚ´æ¿Õ¼ä
+	deletechain(head);                     // é‡Šæ”¾é“¾è¡¨ä¸Šå„ç»“ç‚¹å ç”¨çš„å†…å­˜ç©ºé—´
 }
 ```
