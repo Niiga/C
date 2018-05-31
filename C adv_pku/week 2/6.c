@@ -2,7 +2,7 @@
 # 35
 . 46
 @ 64
-���룺
+ÊäÈë£º
 5
 ....#
 .#.@.
@@ -10,7 +10,7 @@
 #....
 .....
 4
-���
+Êä³ö
 16 
 */
 #include <stdio.h>
@@ -60,6 +60,7 @@ int numChar(char a[100][100], int n, int num) {
     return sum;
 }
 
+// 编译一直Wrong Answer，先从这里查起
 void change(char a[100][100], int n) {
     int i, j;
     char b[100][100];
