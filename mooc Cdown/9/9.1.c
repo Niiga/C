@@ -25,12 +25,12 @@ int main()
     int k = strlen(s);
     
 	int i;    
-    printf("%c", s[0]);
+    printf("%c", s[0]);             // 输出开头的n
     for (i=1; i<k; i++) {
         if (s[i] == 'n') {
             if (s[i-1] != 'n') {
                 printf("\n");
-            }
+            }                       // 将所有n输出为一个
         } else  {
             printf("%c", s[i]); 
         }
