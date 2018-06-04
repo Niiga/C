@@ -16,41 +16,28 @@ de[回车]
 */
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct node {
-    char ch;
-    struct node *next;
-}ARRAY;
-
-ARRAY *Assign(ARRAY *p);
-
+#include <string.h>
 
 int main()
 {
-    ARRAY *p;
-    p = Assign(p);
-
-    return 0;   
-}
-
-ARRAY *Assign(ARRAY *p) 
-{
-    ARRAY *p;
-    ARRAY *head;
-	head = (ARRAY *)malloc(sizeof(ARRAY));
-    p = head;
+    char s[100];
+    gets(s);
+    int k = strlen(s);
     
-    // 输入 p
-    char ch = ' ';
-    while (ch != '\n') {
-    	ch = getchar();
-    
-        p->next = (ARRAY *)malloc(sizeof(ARRAY));
-        p = p->next;
-        p->ch = ch;
+	int i;    
+    printf("%c", s[0]);
+    for (i=1; i<k; i++) {
+        if (s[i] == 'n') {
+            if (s[i-1] != 'n') {
+                printf("\n");
+            }
+        } else  {
+            printf("%c", s[i]); 
+        }
     }
-    p->next = NULL;
-    p = head;
+    for (i=i+1; i<k; i++) {
+        printf("%c", s[i]);
+    }
 
-    return p;
+    return 0;
 }
