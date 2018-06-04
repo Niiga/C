@@ -35,9 +35,6 @@ int main()
             printf("%c", s[i]); 
         }
     }
-    for (i=i+1; i<k; i++) {
-        printf("%c", s[i]);
-    }
 
     return 0;
 }
