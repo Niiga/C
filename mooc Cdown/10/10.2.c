@@ -1,14 +1,14 @@
 /*
-µÝ¹éµÄ·½·¨¼ÆËãº¬¶à¸öÔËËã·ûµÄËÄÔòÔËËã±í´ïÊ½×Ö·û´®µÄÖµµÝ £¨15·Ö£©
-ÌâÄ¿ÄÚÈÝ£º
-ÇëÔÚÉÏÒ»ÌâµÄ»ù´¡ÉÏ£¬²ÉÓÃµÝ¹éµÄ·½·¨£¬¼ÆËãº¬¶à¸öÔËËã·ûµÄËÄÔòÔËËã±í´ïÊ½×Ö·û´®µÄÖµ(ÎÞÀ¨ºÅ£¬µ«Òª¿¼ÂÇÓÅÏÈ¼¶)
-ÊäÈë¸ñÊ½:
-¶à¸öÔËËã·ûµÄËÄÔòÔËËã±í´ïÊ½×Ö·û´®
-Êä³ö¸ñÊ½£º
-ÔËËã½á¹û
-ÊäÈëÑùÀý£º
+é€’å½’çš„æ–¹æ³•è®¡ç®—å«å¤šä¸ªè¿ç®—ç¬¦çš„å››åˆ™è¿ç®—è¡¨è¾¾å¼å­—ç¬¦ä¸²çš„å€¼é€’ ï¼ˆ15åˆ†ï¼‰
+é¢˜ç›®å†…å®¹ï¼š
+è¯·åœ¨ä¸Šä¸€é¢˜çš„åŸºç¡€ä¸Šï¼Œé‡‡ç”¨é€’å½’çš„æ–¹æ³•ï¼Œè®¡ç®—å«å¤šä¸ªè¿ç®—ç¬¦çš„å››åˆ™è¿ç®—è¡¨è¾¾å¼å­—ç¬¦ä¸²çš„å€¼(æ— æ‹¬å·ï¼Œä½†è¦è€ƒè™‘ä¼˜å…ˆçº§)
+è¾“å…¥æ ¼å¼:
+å¤šä¸ªè¿ç®—ç¬¦çš„å››åˆ™è¿ç®—è¡¨è¾¾å¼å­—ç¬¦ä¸²
+è¾“å‡ºæ ¼å¼ï¼š
+è¿ç®—ç»“æžœ
+è¾“å…¥æ ·ä¾‹ï¼š
 3*2+3
-Êä³öÑùÀý£º
+è¾“å‡ºæ ·ä¾‹ï¼š
 9
 */
 #include <stdio.h>
@@ -30,7 +30,7 @@ int main()
     int n, i, j;
     int sn;
     i = 0;
-// Á´±í·½Ê½¶ÁÈëËùÊäËãÊ½ 
+// é“¾è¡¨æ–¹å¼è¯»å…¥æ‰€è¾“ç®—å¼ 
     p->next = (ARRAY *)malloc(sizeof(ARRAY));
     p = p->next;
     scanf("%d", &n);
@@ -49,9 +49,9 @@ int main()
     p->next = NULL;
     p = head;
 
-// Êý×ÖºÍ×Ö·û·Ö±ð¸³Öµµ½Êý×é 
+// æ•°å­—å’Œå­—ç¬¦åˆ†åˆ«èµ‹å€¼åˆ°æ•°ç»„ 
     sn = i;
-	int num[sn];
+    int num[sn];
     char c[sn-1];
     i = 0;
     j = 0;
@@ -66,8 +66,8 @@ int main()
     	p = p->next;
 	}
 
-// ³Ë³ýÓÅÏÈ£¬¼õ·¨×ª»»³É¼Ó·¨
-	float n1[sn];
+// ä¹˜é™¤ä¼˜å…ˆï¼Œå‡æ³•è½¬æ¢æˆåŠ æ³•
+    float n1[sn];
     j=0;
     n1[0] = num[0];
     for (i=0; c[i]!='\0'; i++) {
@@ -75,7 +75,7 @@ int main()
             n1[j] *= (float)num[i+1];
         } else if (c[i] == '/') {
             if (num[i+1] == 0) {
-            	printf("³ýÊý²»µÃÎª0"); 
+            	printf("é™¤æ•°ä¸å¾—ä¸º0"); 
 				return;
 			}
 			n1[j] /= (float)num[i+1];
@@ -88,7 +88,7 @@ int main()
         }
     }
     
-// Í³¼Æ×ÜºÍ 
+// ç»Ÿè®¡æ€»å’Œ 
     float sum=0.0;
     for (i=0; i<=j; i++) {
         sum += n1[i];
