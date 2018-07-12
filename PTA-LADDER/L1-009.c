@@ -50,5 +50,5 @@ long long pGCD(long long a, long long b) {
     if(a == 0)
         return 0;
     else
-        return (b == 0) ? a : gcd(b, a % b);
+        return (b == 0) ? a : pGCD(b, a % b);
 }
