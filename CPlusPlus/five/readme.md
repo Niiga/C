@@ -12,8 +12,8 @@
 * **Object.cpp**  
 对象的生存期  
   
-* **SharedProtection.cpp**  
-共享保护  
+* **ConstObject.cpp**  
+常对象  
   
 * **StaticDataMember.cpp**  
 静态数据成员  
