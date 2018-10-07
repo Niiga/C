@@ -1,18 +1,24 @@
 // 6-5.2_1.cpp 
-// void ÀàĞÍÖ¸ÕëµÄÊ¹ÓÃ
+// void ç±»å‹æŒ‡é’ˆçš„ä½¿ç”¨
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-// !void voidObject; ´í£¬²»ÄÜÉùÃ÷voidÀàĞÍµÄ±äÁ¿
-    void *pv; // ¶Ô£¬¿ÉÒÔÉùÃ÷voidÀàĞÍµÄÖ¸Õë
+// !void voidObject; é”™ï¼Œä¸èƒ½å£°æ˜voidç±»å‹çš„å˜é‡
+    void *pv; // å¯¹ï¼Œå¯ä»¥å£°æ˜voidç±»å‹çš„æŒ‡é’ˆ
     int i = 5;
     pv = &i;
     
-    int *pint = static_cast<int*>(pv); // voidÖ¸Õë×ª»»ÎªintÖ¸Õë
+    int *pint = static_cast<int*>(pv); // voidæŒ‡é’ˆè½¬æ¢ä¸ºintæŒ‡é’ˆ
     cout << "*pint = " << *pint << endl;
 
     return 0;
 }
+
+/*
+    int a;
+    int *const p2 = &a;
+    p2 = &b; // é”™è¯¯ï¼Œp2æ˜¯æŒ‡é’ˆå¸¸é‡ï¼Œå€¼ä¸èƒ½æ”¹å˜
+*/
