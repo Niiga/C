@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define NUM 3
+#define NUM 3 // 输出宽度定义
 using namespace std;
 
 void Minesweeper (int a[][32],int x, int y, int mine); // 随机初始化一张扫雷地图
