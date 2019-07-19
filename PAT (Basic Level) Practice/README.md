@@ -1,5 +1,5 @@
 ## **PAT (Basic Level) Practice**
-### 题目地址:[点击](https://pintia.cn/problem-sets/994805260223102976/problems/type/7 "PAT (Basic Level) Practice")
+### 题目地址：[点击](https://pintia.cn/problem-sets/994805260223102976/problems/type/7 "PAT (Basic Level) Practice")
 > ~~1001 害死人不偿命的(3n+1)猜想~~   
 > ~~1002 写出这个数~~   
 > 1003 我要通过！   
